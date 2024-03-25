@@ -1,0 +1,75 @@
+/*----------General ------------------*/
+section:not([id]) {
+  border-top: none;
+}
+
+html{
+  z-index: 0;
+}
+
+h1{
+  color: var(--seljuk-blue);
+  text-align: center;
+  width: 100%;
+  margin-top: 10rem;
+  text-decoration: underline;
+}
+
+.image-nav{
+  width: 200px;
+  height: auto;
+}
+
+footer{
+  width: 108%;
+  margin-left: -2.5rem;
+}
+/*----------Navigation bar-------------*/
+
+nav{
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  margin-top: -2.5rem;
+  margin-left: -2.5rem;
+  background-color: var(--white);
+  padding-bottom: 5rem;
+  border-bottom: solid 2px var(--gray);
+}
+
+nav ul{
+  position: fixed;
+  right: 0;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+
+/*-------------Bio-----------------*/
+
+#bio{
+  transform: translateY(3rem);
+}
+
+
+/*-----------Featured Projects-------------------*/
+
+#featured-projects{
+  display: flex;
+  justify-content: center;
+
+}
+
+.featured-projects-description{
+  margin-top: 3rem;
+  width: 50%;
+  margin-right: 5rem;
+  line-height: 1.5rem;
+}
+
+.featured-projects-title{
+  font-size: 3rem;
+  color: var(--drift-on-the-sea);
+}
+
