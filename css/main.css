@@ -85,6 +85,11 @@ a:hover{
 
 /*------Image as a link------*/
 
+.image-nav{
+  width: 200px;
+  height: auto;
+}
+
 .image-nav:hover{
   opacity: 0.5;
 }
@@ -201,6 +206,10 @@ figcaption{
   margin: 0;
 }
 
+.contact-name{
+  font-size: 1.5rem;
+}
+
 .resume{
   color: white;
 }
@@ -240,11 +249,15 @@ p{
   font-size: 16px;
 }
 
+.typography, .color-palette{
+  margin-left: 4rem;
+
+}
 .typography:nth-child(-n + 7){
   border-bottom-style: solid;
-  padding-bottom: 60px;
   padding-top: 20px;
-  border-color: #D3D3D3;
+  border-color: var(--drift-on-the-sea);
+  width: 85%;
 }
 
 .rect{

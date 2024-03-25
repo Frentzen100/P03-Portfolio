@@ -4,7 +4,7 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Style Guide Template</title>
+    <title>Style Guide</title>
 
     <link href="css/main.css" rel="stylesheet">
 
@@ -43,7 +43,7 @@
         <p>a, a:hover</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;a href="#"&gt;&lt;Project&gt;&lt;/a&gt;</code>
+        <code>&lt;button class="learn-more-button"&gt;View More&lt;/button&gt;</code>
 
         <h3>Rendered element:</h3>
         <button class="learn-more-button">View More</button>
@@ -55,7 +55,7 @@
         <p>a, a:hover</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;a href="#"&gt;&lt;Project&gt;&lt;/a&gt;</code>
+        <code>&lt;a href="#"&gt;Project&lt;/a&gt;</code>
 
         <h3>Rendered element:</h3>
         <a href="#">Project</a>
@@ -355,7 +355,7 @@
     <section class="element">
       <h2>Bio information</h2>
        
-      <div class="bio">
+      <section id="bio">
         <div class="bio-image">
           <img src="image/profile.png" alt="Frentzen Profile Picture">
         </div>
@@ -370,17 +370,22 @@
               With a strong commitment to continuous learning, I eagerly anticipate new challenges that keep me motivated and engaged on my journey to success.
               </p>
         </div>
-      </div>
+      </section>
      </section>
 
       <h2>Contact Me</h2>
 
-      <div class="contact-me">
+      <section id="contact-me">
         <h4>Frentzen Taslim</h4>
           <p>fht2@sfu.ca</p>
           <p>236-863-8122</p>
             <a href="resume/resume.pdf" class="resume">RESUME LINK</a>
-      </div>
+      </section>
+
+      <h2>Why hired me?</h2>
+
+      <p>I am passionate and enthusiastic about collaborating with your team where I can showcase my proficiency in both UX and uI skills to design responsive webpages that ensure a seamless user journey.
+        As a proactive problem solver, I strongly believe that my skills in analyzing client needs and tackling design challenges can help your company to deliver an outstanding user experience.</p>
 
     
 
@@ -394,38 +399,40 @@
       <h2>Fonts</h2>
       <div class="typography">
         <h1>Heading 1</h1>
-        <p> 44px Roboto Bold</p> 
+        <p> 44px</p>
+        <p> Roboto Bold</p>
       </div>
 
       <div class="typography">
         <h2>Heading 2</h2>
-        <p> 36px Roboto Regular</p>
+          <p>360px</p>
+          <p>Roboto Regular</p>
       </div>
 
       <div class="typography">
         <h3>Heading 3</h3>
-        <p> 28px Helvetica Regular</p>
+          <p>28px</p>
+          <p>Helvetica Regular</p>
       </div>
 
       <div class="typography">
         <h4>Heading 4</h4>
-        <p> 20px Helvetica Regular</p>
+          <p> 20px</p>
+          <p>Helvetica Regular</p>
       </div>
 
       <div class="typography">
         <p><b> Body Bold</b></p>
-        <p> 16px Helvetica Bold</p>
+          <p>16px</p>
+          <p>Helvetica Bold</p>
       </div>
 
       <div class="typography">
         <p>Body</p>
-        <p> 16px Helvetica Regular</p>
+        <p>16px</p>
+        <p>Helvetica Regular</p>
       </div>
 
-      <div class="typography">
-        <p>Button</p>
-        <p> 14px Helvetica Regular</p>
-      </div>
       </section>
     </section>
       
@@ -433,21 +440,29 @@
     <section class="element">
       <h2>Color Palette</h2>
 
-      <div class="rect rect1"></div>
-      <h4>Seljuk Blue - #3A8DEF</h4>
-      <p class="color-text">Highlight the title, color my hover state of the button</p>
+      <div class="color-palette">
+        <div class="rect rect1"></div>
+        <h4>Seljuk Blue - #3A8DEF</h4>
+          <p class="color-text">Highlight the title, color my hover state of the button</p>
+      </div>
       
-      <div class="rect rect2"></div>
-      <h4>Drift on the sea - #241615</h4>
-      <p class="color-text">Draw the most important point on my resume, color my default state of the button</p>
+      <div class="color-palette">
+        <div class="rect rect2"></div>
+        <h4>Drift on the sea - #241615</h4>
+          <p class="color-text">Draw the most important point on my resume, color my default state of the button</p>
+      </div>
 
-      <div class="rect rect3"></div>
-      <h4>Cocoa Brown - #241615</h4>
-      <p class="color-text">Color of my text</p>
+      <div class="color-palette">
+        <div class="rect rect3"></div>
+        <h4>Cocoa Brown - #241615</h4>
+          <p class="color-text">Color of my text</p>
+      </div>
 
-      <div class="rect rect4"></div>
-      <h4>White - #FFFFFF</h4>
-      <p class="color-text">Color of my text on the button</p>
+      <div class="color-palette">
+        <div class="rect rect4"></div>
+        <h4>White - #FFFFFF</h4>
+          <p class="color-text">Color of my text on the button</p>
+      </div>
     </section>
  
     <section class="element imagery">
