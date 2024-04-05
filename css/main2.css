@@ -190,12 +190,13 @@ button{
    width: 75%;
   }
 
-  .overall-context{
-    animation: fadeInUp 0.5s forwards;
-    margin: auto;
-    width: 75%;
-    margin-top: -0.5rem;
-  }
+.overall-context{
+  animation: fadeInUp 0.5s forwards;
+  margin: auto;
+  width: 75%;
+  margin-top: -0.5rem;
+  border-top: 3px solid var(--seljuk-blue);
+}
 
 .project-section-title:not(:first-child){
   margin-top: 4.5rem;
@@ -282,19 +283,32 @@ footer{
    #bio{
       display: flex;
       flex-direction: column;
+      width: 120%;
    }
 
    .bio-image{
       order: 2;
+      margin-bottom: 5rem;
    }
 
    .bio-description{
       order: 1;
       width: 75%;
+      margin-left: -1.25rem;
       text-align: center;
    }
 
   /*----------Featured Project------------*/
+   .featured-project-title{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /*----------Footer------------*/
+  footer{
+    width: 110%;
+  }
   
 }
 
@@ -346,6 +360,16 @@ footer{
     left: 0;
   }
 
+  /*----------Featured Project------------*/
+  .featured-project-title{
+    width: 75%;
+  }
+  /*----------Footer------------*/
+  footer{
+    width: 120%;
+  }
+
+
 }
 
 @media (max-width: 660px) {
@@ -355,23 +379,23 @@ footer{
   #featured-projects{
     display: flex;
     flex-direction: column;
-   
- }
+  }
+
+  .featured-projects-image{
+      order: 1;
+      position: static;
+      margin: 0;
+      padding: 0;
+  }
+
+  .featured-projects-description{
+      order: 2;
+      width: 80%;
+      margin: auto;
+  }
 
   .featured-project-title{
-    width: 60%;
-    display: flex;
-    justify-content: center;
-}
-
- .featured-projects-image{
-    order: 1;
- }
-
- .featured-projects-description{
-    order: 2;
-    width: 80%;
-    margin: auto;
- }
+    width: 90%;
+  }
 
 }

@@ -80,10 +80,11 @@ a:hover{
 .image-nav{
   width: 200px;
   height: auto;
+  transition: 0.3s ease;
 }
 
 .image-nav:hover{
-  opacity: 0.5;
+  transform: scale(1.05);
 }
 
 
