@@ -1,0 +1,62 @@
+#seniowell{
+    margin: auto;
+}
+
+#seniowell-signup{
+    width: auto;
+    height: 400px;
+    position: absolute;
+    margin-top: 3rem;
+    right: 0;
+    margin-right: 6rem;
+}
+
+#seniowell-persona{
+    display: flex;
+}
+
+#seniowell-persona img:last-of-type{
+    margin-left: 2rem;
+}
+
+#sketches{
+    max-width: 100%;
+    display: block;
+}
+
+#sketches .three-images img{
+    width: 400px;
+    height: auto;
+    margin: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#sketches .three-images figcaption{
+    text-align: center;
+    width: 90%;
+    margin-left: 1.25rem;
+}
+
+.prototype .image-and-caption:first-child > figcaption {
+    width: 90%;
+}
+
+#sketches .image-and-caption:not(:last-child){
+    border-right: 2px solid var(--gray);
+}
+
+#seniowell-contact-me{
+    position: absolute;
+    bottom: 0;
+}
+
+.first-prototype{
+    margin-right: 4.5rem;
+}
+
+.third-prototype{
+    margin-left: 0.5rem;
+}
+
+/*Target everything except for the last element: https://stackoverflow.com/questions/2573544/how-can-i-select-all-children-of-an-element-except-the-last-child */

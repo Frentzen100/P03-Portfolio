@@ -5,24 +5,33 @@ section:not([id]) {
 
 html{
   z-index: 0;
+  scroll-behavior: smooth;
 }
 
 h1{
   color: var(--seljuk-blue);
   text-align: center;
-  width: 100%;
-  margin-top: 10rem;
-  text-decoration: underline;
+  border-bottom: solid 3px var(--gray);
+  padding-bottom: 1rem;
+  width: 40%;
+  margin: 8rem auto 3rem auto;
 }
 
 .image-nav{
-  width: 200px;
+  width: 300px;
   height: auto;
 }
 
 footer{
   width: 108%;
   margin-left: -2.5rem;
+}
+
+figcaption{
+  margin-top: 1.5rem;
+  font-style: italic;
+  margin-bottom: 4.5rem;
+  font-size: 0.85rem;
 }
 /*----------Navigation bar-------------*/
 
@@ -31,13 +40,36 @@ footer{
   left: 0;
   margin-left: 4rem;
   font-size: 1.75rem;
-  margin-top: -0.25rem;
+  margin-top: 0.25rem;
+  border-bottom: 2px solid transparent; /* Initial transparent border */
+  padding-bottom: 0.3rem;
 }
 
-.logo:hover{
-  color: var(--drift-on-the-sea);
+.logo::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color:var(--seljuk-blue); 
+  transition: width 0.5s ease; 
 }
 
+.logo:hover::after {
+  width: 100%;
+  background-color: var(--seljuk-blue); 
+  animation: drawLogoBorder 0.5s ease forwards;
+}
+
+@keyframes drawLogoBorder {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 
 nav{
   position: fixed;
@@ -49,13 +81,26 @@ nav{
   background-color: var(--white);
   padding-bottom: 5rem;
   border-bottom: solid 2px var(--gray);
+  animation: fadeInDown 0.5s forwards;
 }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 
 nav ul{
   position: fixed;
   right: 0;
   margin-right: 2rem;
-  margin-top: 2rem;
+  margin-top: 1.2rem;
 }
 
 nav ul li:nth-child(n+2) a {
@@ -78,33 +123,197 @@ nav ul li:nth-child(n+2) a {
 #featured-projects{
   display: flex;
   justify-content: center;
-
+  align-items: center;
+  padding-top: 3.5rem;
 }
 
 .featured-projects-description{
-  margin-top: 3rem;
-  width: 50%;
+  width: 40%;
   margin-right: 5rem;
   line-height: 1.5rem;
 }
 
-.featured-projects-title{
-  font-size: 3.5rem;
+.featured-projects-description h3{
   color: var(--drift-on-the-sea);
 }
 
 .featured-projects-subheading{
-  margin-top: -1.25rem; 
-  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .featured-projects-content{
   margin-bottom: 1.25rem;
 }
 
+button{
+  border-radius: 80px;
+}
 
+/*-----------------Contact Me-----------------*/
+
+.contact-me-quote{
+  color: var(--cocoa-brown);
+}
+/*-----------------Overall Project-----------------*/
+
+.project-overall{
+   width: 75%;
+  }
+
+  .overall-context{
+    animation: fadeInUp 0.5s forwards;
+    margin: auto;
+    width: 75%;
+    margin-top: -0.5rem;
+  }
+
+  /*
+  .context-container{
+    width: 100%;
+    background-color: var(--seljuk-blue);
+    border: solid 5px red;
+  }
+  */
+
+/*
+.featured-projects-title{
+  font-weight: 1000;
+  font-size: 2.5rem;
+}
+
+.featured-projects-subheading{
+  font-weight: 100;
+}
+*/
+
+.project-section-title:not(:first-child){
+  margin-top: 4.5rem;
+}
+
+.project-title{
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.project-type{
+  font-size: 1.6rem;
+  font-weight: 100;
+  padding-left: 1.3rem;
+  padding-top: 1.25rem;
+}
+
+.project-name{
+  position: absolute;
+  transform: translate(1.7rem, 3rem);
+}
+
+.context{
+  padding-top: 10rem;
+}
+
+.one-image{
+  width: 700px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border: solid 1px var(--cocoa-brown);
+}
+
+.bulletless{
+  list-style: none;
+}
+
+.three-images{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.three-images-size{
+  width: 200px;
+  height: auto;
+}
+
+.three-images img{
+  width: auto;
+  height: 500px;
+  text-align: center;
+}
+
+.three-images figcaption{
+  width: 75%;
+}
+
+.image-and-caption{
+  display: block;
+}
+
+.refinement figcaption{ 
+  margin-top: -1rem;
+}
+
+.key-statement{
+  font-weight: bold;
+  font-size: 1.1rem;
+}
 /*-----------------Footer-----------------------*/
 footer{
   margin-top: 10rem;
 }
 
+
+/*-----------------Responsiveness-----------------------*/
+
+@media (max-width: 992px) {
+
+  /*----------Bio------------*/
+   #bio{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .bio-image{
+      order: 2;
+   }
+
+   .bio-description{
+      order: 1;
+      width: 75%;
+      text-align: center;
+   }
+
+  /*----------Featured Project------------*/
+  
+}
+
+@media (max-width: 660px) {
+
+  /*----------Featured Project------------*/
+
+  #featured-projects{
+    display: flex;
+    flex-direction: column;
+   
+ }
+
+  .featured-project-title{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+ .featured-projects-image{
+    order: 1;
+ }
+
+ .featured-projects-description{
+    order: 2;
+    width: 80%;
+    margin: auto;
+ }
+
+}
