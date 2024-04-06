@@ -134,9 +134,10 @@ nav ul li:nth-child(n+1) a {
     color: var(--cocoa-brown);
  }
  
- nav ul li:nth-child(n+1) a:hover{
+nav ul li:nth-child(n+1) a:hover{
    color: var(--drift-on-the-sea);
   }
+
 
 /*-------------Bio-----------------*/
 
@@ -186,16 +187,22 @@ button{
 }
 /*-----------------Overall Project-----------------*/
 
-.project-overall{
-   width: 75%;
-  }
-
 .overall-context{
   animation: fadeInUp 0.5s forwards;
   margin: auto;
   width: 75%;
-  margin-top: -0.5rem;
-  border-top: 3px solid var(--seljuk-blue);
+  margin-top: 2rem;
+  border: solid 2px var();
+}
+
+tr td:last-of-type{
+  width: 60%;
+  display: flex;
+  padding-top: 2.5rem;
+}
+
+.project-overall{
+  width: 75%;
 }
 
 .project-section-title:not(:first-child){
@@ -312,6 +319,11 @@ footer{
   
 }
 
+@media (max-width: 1260px){
+  /*----------Overall Project------------*/
+  
+
+}
 
 @media (max-width: 768px) {
 
@@ -327,6 +339,17 @@ footer{
     border: solid 5px red;
   }
   */
+
+  header.show-mobile-menu::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    border: solid 5px red;
+  }
 
   #hamburger-btn {
     display: block;
@@ -345,14 +368,14 @@ footer{
     left: -340px;
     width: 250px;
     height: 100vh;
-    background: var(--seljuk-blue);
+    background: var(--white);
     flex-direction: column;
     padding: 70px 40px 0;
     transition: left 0.2s ease;
   }
 
-  .nav-links a:last-of-type{
-    border: solid 5px red;
+  .nav-links li:last-of-type{
+    transform: translateY(-2rem);
   }
 
 
@@ -364,6 +387,7 @@ footer{
   .featured-project-title{
     width: 75%;
   }
+
   /*----------Footer------------*/
   footer{
     width: 120%;

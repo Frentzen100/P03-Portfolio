@@ -114,10 +114,12 @@ ul li{
 }
 
 .context{
-  background-color: var(--drift-on-the-sea);
   width: 100%;
-  padding-top: 2rem;
   padding-left: 2rem;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: solid 2px var(--seljuk-blue);
+  border-top: solid 2px var(--seljuk-blue);
 }
 
 .context td:first-of-type{

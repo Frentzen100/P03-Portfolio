@@ -16,7 +16,6 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/main2.css" rel="stylesheet">
     <link href="css/seniowell.css" rel="stylesheet">
-
      <!-- Hamburger Icon Link -->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 
@@ -26,7 +25,7 @@
 
     <header>
       <nav class="navbar">
-        <a class="logo" href="#"><b>Frentzen</b> Taslim</a>
+        <a class="logo" href="index.html"><b>Frentzen</b> Taslim</a>
         <ul class="nav-links">
           <li><span id="close-menu-btn" class="material-symbols-outlined">close</span></li>
           <li><a href="#featured-projects">Project</a></li>
@@ -84,11 +83,12 @@
       <img src="image/seniowell/persona2.png" alt="Second persona" class="two-images">
     </div>
     <figcaption>Persona for senior who experience oesteoporosis and arthritis</figcaption>
+
       <h4 class="project-section-subheading">Userflow</h4>
         <p> To create a user flow, I need to first understand the user's goal and pain point when they exercise by analyzing the personas.
            Then, I created relevant features and all the necessary actions the seniors need to accomplish their goal. 
            I did this to ensure all team members have a shared understanding of how we visualized our intended user journey.</p>
-    <img src="image/seniowell/userflow.png" alt="Userflow" class="one-image">
+    <img src="image/seniowell/userflow.png" alt="Userflow" class="one-image seniowell-userflow">
     <figcaption>Journey of the user through our app</figcaption>
 
     <h3 class="project-section-title">DESIGN</h3>
@@ -118,7 +118,8 @@
            Additionally, we utilized short videos to visually demonstrate exercises, as seniors often found it easier to understand visual information. 
            Furthermore, I implemented a congratulatory message feature to motivate seniors to engage in workouts more frequently.</p>
 
-    <img src="image/seniowell/storyboard.png" alt="Storyboard" class="one-image">
+    <img src="image/seniowell/storyboard.png" alt="Storyboard" class="one-image" id="seniowell-fghjjjhműiim,;/'
+    storyboard">
     <figcaption>Case study of a user who is doing a workout</figcaption>
         
      <h4 class="project-section-subheading">Initial Prototype</h4>
@@ -197,6 +198,19 @@
       <a href="resume/resume.pdf" class="resume">RESUME LINK</a>
     </section>
   </footer>
+
+   <!-- Javascript for the Hamburger menu -->
+   <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    // Toggle mobile menu on hamburger button click
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    // Close mobile menu on close button click
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+  </script>
 
    
 
