@@ -264,6 +264,7 @@ tr td:last-of-type{
   list-style: none;
 }
 
+
 .three-images{
   display: flex;
   margin: auto;
@@ -275,6 +276,7 @@ tr td:last-of-type{
   height: auto;
 }
 
+
 .three-images img{
   width: auto;
   height: 500px;
@@ -284,6 +286,7 @@ tr td:last-of-type{
 .three-images figcaption{
   width: 75%;
 }
+
 
 .image-and-caption{
   display: block;
@@ -323,7 +326,6 @@ footer{
       order: 1;
       width: 75%;
       margin-left: -1.25rem;
-      text-align: center;
    }
 
   /*----------Featured Project------------*/
@@ -350,26 +352,7 @@ footer{
   
 }
 
-@media (max-width: 1260px){
-  /*----------Overall Project------------*/
-  
-
-}
-
 @media (max-width: 768px) {
-
-  /*
-  header.show-mobile-menu::before {
-    content: "";
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(5px);
-    border: solid 5px red;
-  }
-  */
 
   header.show-mobile-menu::after {
     content: "";
