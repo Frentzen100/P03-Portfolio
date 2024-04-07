@@ -2,6 +2,11 @@
     margin: auto;
 }
 
+#seniowell-logo{
+    width: 310px;
+    height: auto;
+    border: solid 1px var(--drift-on-the-sea);
+}
 #seniowell-signup{
     width: auto;
     height: 400px;
@@ -113,11 +118,6 @@
 
 @media (max-width: 992px) {
 
-    .context{
-        width: 120%;
-        margin-left: -3.7rem;
-    }
-
     #seniowell{
         width: 90%;
     }
@@ -141,6 +141,14 @@
 
     #seniowell-persona, #sketches .three-images img,  #sketches .three-images figcaption {
         margin-left: 0;
-    }
-    
+    } 
   }
+
+  @media (max-width: 660px){
+
+    #seniowell-logo{
+        margin-top: 2rem;
+        min-width: 100%;
+    }
+  }
+

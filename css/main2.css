@@ -223,8 +223,11 @@ tr td:last-of-type{
 }
 
 .overall-context{
+  display: flex;
+  align-items: center;
   width: 25%;
   border: dashed 2px var(--seljuk-blue);
+
 }
 
 .one-image{
@@ -396,6 +399,28 @@ footer{
 @media (max-width: 660px) {
 
   /*----------Featured Project------------*/
+
+  .project-main-content{
+    display: block;
+  }
+
+  .overall-context{
+    width: 90%;
+  }
+
+  .context td:first-of-type{
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  .context td:last-of-type{
+    font-size: 1rem;
+  }
+  
+
+  .project-overview{
+    width: 100%;
+  }
 
   #featured-projects{
     display: flex;
