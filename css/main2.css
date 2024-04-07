@@ -187,47 +187,44 @@ button{
 }
 /*-----------------Overall Project-----------------*/
 
+/*
 .overall-context{
   animation: fadeInUp 0.5s forwards;
   margin: auto;
   width: 75%;
   margin-top: 2rem;
-  border: solid 2px var();
 }
-
-tr td:last-of-type{
-  width: 60%;
-  display: flex;
-  padding-top: 2.5rem;
-}
+*/
 
 .project-overall{
   width: 75%;
+  padding-top: 5rem;
+}
+
+
+tr td:last-of-type{
+  width: 90%;
+  display: flex;
+  padding-bottom: 1.5rem;
+
 }
 
 .project-section-title:not(:first-child){
   margin-top: 4.5rem;
 }
 
-.project-title{
-  font-size: 3.2rem;
-  font-weight: bold;
+.project-main-content{
+  display: flex;
+  justify-content: space-between;
 }
 
-.project-type{
-  font-size: 1.6rem;
-  font-weight: 100;
-  padding-left: 1.3rem;
-  padding-top: 1.25rem;
+.project-overview{
+  width: 60%;
 }
 
-.project-name{
-  position: absolute;
-  transform: translate(1.7rem, 3rem);
-}
-
-.context{
-  padding-top: 10rem;
+.overall-context{
+  width: 25%;
+  border: dashed 2px var(--seljuk-blue);
 }
 
 .one-image{

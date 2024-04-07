@@ -102,6 +102,7 @@ ul li{
   COMBINED ELEMENTS -------------------
 */
 
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -116,22 +117,22 @@ ul li{
 .context{
   width: 100%;
   padding-left: 2rem;
-  margin-top: 1rem;
-  padding-bottom: 2rem;
-  border-bottom: solid 2px var(--seljuk-blue);
-  border-top: solid 2px var(--seljuk-blue);
+  padding-top: 0.5rem;
+}
+
+tr{
+  display: block;
 }
 
 .context td:first-of-type{
   font-weight: bold;
-  font-size: 1.5rem;
-  padding-bottom: 2rem;
+  font-size: 1rem;
 }
 
 .context td:last-of-type{
-  margin-top: -1rem;
-  transform: translate(-3rem, -1.1rem);
+  font-size: 0.75rem;
 }
+
 
 .project-section-title{
   color: var(--drift-on-the-sea);

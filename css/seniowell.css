@@ -51,12 +51,18 @@
     bottom: 0;
 }
 
+.prototype{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+
 .first-prototype{
-    margin-right: 4.5rem;
+    margin-right: 1rem;
 }
 
 .third-prototype{
-    margin-left: 0.5rem;
+    margin-left: -1rem;
 }
 
 /*Target everything except for the last element: https://stackoverflow.com/questions/2573544/how-can-i-select-all-children-of-an-element-except-the-last-child */
@@ -82,15 +88,26 @@
     }
 
     #sketches .three-images {
-        border: solid 5px blue;
-        display: flex;
+        display: block;
+        text-align: center;
     }
 
-    #sketches .three-images img{
-        border: solid 5px red;
-        display: flex;
+    #sketches .image-and-caption:not(:last-child){
+        border: none;
     }
 
+    #sketches .three-images figcaption {
+       margin-left: 1rem;
+       padding-left: 1.5rem;
+    }
+
+    .refinement img{
+        width: 100%;
+    }
+
+    .prototype{
+        border: solid 1px red;
+    }
 
 }
 
@@ -105,7 +122,6 @@
         width: 90%;
     }
    
-
     .seniowell-userflow{
         width: 100%;
         height: auto;
@@ -123,7 +139,8 @@
         height: auto;
     }
 
-    #seniowell-persona{
+    #seniowell-persona, #sketches .three-images img,  #sketches .three-images figcaption {
         margin-left: 0;
     }
+    
   }

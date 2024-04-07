@@ -1,7 +1,3 @@
-<!--
-  Header animation fade in down
-  Hero section animation fade in up
--->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,44 +31,46 @@
       </nav>
     </header>
 
-    <section class="context-container">
-    <div class="overall-context">
-      <img src="image/seniowell/phone-signup.png" id="seniowell-signup" alt="Sign up feature of SenioWell">
-      <p class="project-name"><span class="project-title">UI Design</span> <span class="project-type">Academic</span></p>
-      <table class="context">
-        <tr>
-          <td>ROLE</td>
-          <td>UX/UI Designer</td>
-        </tr>
-
-        <tr>
-          <td>TEAM</td>
-          <td>Mustafa, Harshil</td>
-        </tr>
-
-        <tr>
-          <td>TIMELINE</td>
-          <td>Fall 2023, 7 weeks</td>
-        </tr>
-
-        <tr>
-          <td>TOOLS</td>
-          <td>Figma, ProtoPie</td>
-        </tr>
-
-        <tr>
-          <td>SKILLS</td>
-          <td>UX researching, Interaction design, Wireframing, Prototyping</td>
-        </tr>
-      </table>
-    </div>
-    </section>
-
     <section class="project-overall" id="seniowell">
-    <h3 class="project-section-title">PROJECT OVERVIEW</h3>
-      <p>SenioWell is a workout application designed to provide simple exercises for seniors to prevent further stages of osteoporosis and arthritis.
-         In this project, I collaborated with a team of two to develop a complex and interactive user interface. 
-         This involved research to identify suitable exercises and creating prototypes to visualize the app's interactive features </p>
+     
+    <section class="project-main-content">
+
+      <div class="overall-context context">
+        <table>
+          <tr>
+            <td>ROLE</td>
+            <td>UX/UI Designer</td>
+          </tr>
+  
+          <tr>
+            <td>TEAM</td>
+            <td>Mustafa, Harshil</td>
+          </tr>
+  
+          <tr>
+            <td>TIMELINE</td>
+            <td>Fall 2023, 7 weeks</td>
+          </tr>
+  
+          <tr>
+            <td>TOOLS</td>
+            <td>Figma, ProtoPie</td>
+          </tr>
+  
+          <tr>
+            <td>SKILLS</td>
+            <td>UX researching, Interaction design, Wireframing, Prototyping</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="project-overview">
+        <h3 class="project-section-title">PROJECT OVERVIEW</h3>
+          <p>SenioWell is a workout application designed to provide simple exercises for seniors to prevent further stages of osteoporosis and arthritis.
+            In this project, I collaborated with a team of two to develop a complex and interactive user interface. 
+            This involved research to identify suitable exercises and creating prototypes to visualize the app's interactive features </p>
+      </div>
+    </section>
 
     <h3 class="project-section-title">RESEARCH</h3>
       <h4 class="project-section-subheading">Personas</h4>
@@ -118,8 +116,7 @@
            Additionally, we utilized short videos to visually demonstrate exercises, as seniors often found it easier to understand visual information. 
            Furthermore, I implemented a congratulatory message feature to motivate seniors to engage in workouts more frequently.</p>
 
-    <img src="image/seniowell/storyboard.png" alt="Storyboard" class="one-image" id="seniowell-fghjjjhműiim,;/'
-    storyboard">
+    <img src="image/seniowell/storyboard.png" alt="Storyboard" class="one-image" id="storyboard-image">
     <figcaption>Case study of a user who is doing a workout</figcaption>
         
      <h4 class="project-section-subheading">Initial Prototype</h4>
@@ -199,8 +196,9 @@
     </section>
   </footer>
 
-   <!-- Javascript for the Hamburger menu -->
+   
    <script>
+    //JavaScript for mobile menu
     const header = document.querySelector("header");
     const hamburgerBtn = document.querySelector("#hamburger-btn");
     const closeMenuBtn = document.querySelector("#close-menu-btn");
@@ -210,6 +208,28 @@
 
     // Close mobile menu on close button click
     closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+
+    //--------------------//
+    
+    //JavaScript for changing a landscape image to a portrait image
+    function swapImages() {
+      var image = document.getElementById('storyboard-image');
+
+      var viewportWidth = window.innerWidth;
+
+      if (viewportWidth <= 992) {
+          image.src = 'image/seniowell/storyboard-mobile.png';
+          image.style.width = '55%'; 
+      } else {
+          image.src = 'image/seniowell/storyboard.png';
+          image.style.width = '100%'; 
+      }
+    }
+
+    // Call swapImages function on page load and window resize
+    window.onload = swapImages;
+    window.onresize = swapImages;
+    
   </script>
 
    
