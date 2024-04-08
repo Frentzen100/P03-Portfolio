@@ -55,6 +55,7 @@ figcaption{
   margin-bottom: 4.5rem;
   font-size: 0.85rem;
 }
+
 /*----------Navigation bar-------------*/
 
 .logo{
@@ -294,6 +295,10 @@ tr td:last-of-type{
 
 .refinement figcaption{ 
   margin-top: -1rem;
+}
+
+.highlight{
+  font-weight: bold;
 }
 
 .key-statement{

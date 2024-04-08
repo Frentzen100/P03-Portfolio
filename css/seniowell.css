@@ -180,7 +180,6 @@
 
     .prototype{
         display: block;
-        border: solid 5px red;
         text-align: center;
     }
   }
