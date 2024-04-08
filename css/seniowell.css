@@ -19,48 +19,43 @@
 
 #seniowell-persona{
     display: flex;
-}
 
-#seniowell-persona img:last-of-type{
-    margin-left: 2rem;
+    img:last-of-type{
+        margin-left: 2rem;
+    }
 }
 
 #sketches{
     max-width: 100%;
     display: flex;
-}
 
-#sketches img{
-    width: 400px;
-    height: auto;
-    margin: auto;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
+    img{
+        width: 400px;
+        height: auto;
+        margin: auto;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 
-#sketches figcaption{
-    text-align: center;
-    width: 90%;
-    margin-left: 1.25rem;
-}
+    figcaption{
+        text-align: center;
+        width: 90%;
+        margin-left: 1.25rem;
+    }
 
-.prototype .image-and-caption:first-child > figcaption {
-    width: 90%;
-}
-
-#sketches .image-and-caption:not(:last-child){
-    border-right: 2px solid var(--gray);
-}
-
-#seniowell-contact-me{
-    position: absolute;
-    bottom: 0;
+    .image-and-caption:not(:last-child){
+        border-right: 2px solid var(--gray);
+    }
 }
 
 .prototype{
     display: flex;
     justify-content: space-between;
     margin-left: 2rem;
+
+    .image-and-caption:first-child > figcaption {
+        width: 90%;
+    }
 }
 
 .first-prototype{
@@ -71,6 +66,12 @@
     margin-left: -1rem;
 }
 
+#seniowell-contact-me{
+    position: absolute;
+    bottom: 0;
+}
+
+
 /*Target everything except for the last element: https://stackoverflow.com/questions/2573544/how-can-i-select-all-children-of-an-element-except-the-last-child */
 
 @media (max-width: 1250px) {
@@ -80,56 +81,61 @@
         margin: auto;
     }
 
-    #seniowell-persona figcaption{
-        margin-left: 1rem;
-    }
+    #seniowell-persona{
 
-    #seniowell-persona img:last-of-type{
-        margin: auto;
-        padding-top: 1.5rem;
-    }
+        figcaption{
+            margin-left: 1rem;
+        }
 
-    #seniowell-persona img:first-of-type{
-        margin: auto;
+        img:first-of-type{
+            margin: auto;
+        }
+
+        img:last-of-type{
+            margin: auto;
+            padding-top: 1.5rem;
+        }
     }
     
     #sketches{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+        text-align: center;
+        max-width: 100%;
+
+        figcaption{
+            width: 100%;
+        }
+        img, figcaption{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .image-and-caption{
+            margin: auto;
+        }
+
+        .image-and-caption:not(:last-child){
+            border: none;
+        }
     }
 
-    #sketches .image-and-caption:not(:last-child){
-        border: none;
-    }
-
-    #sketches img, #sketches figcaption{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #sketches .image-and-caption{
-        margin: auto;
-    }
-
-    #sketches figcaption{
-        width: 100%;
-    }
-
-    .prototype, #sketches{
+    .prototype{
         display: flex;
         flex-wrap: wrap;
         text-align: center;
         max-width: 100%;
-    }
 
-    .prototype figcaption{
-        margin-left: auto;
-        margin-right: auto;
-    }
+        figcaption{
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-    .prototype .image-and-caption{
-        width: 40%;
-        margin: auto;
+        .image-and-caption{
+            width: 40%;
+            margin: auto;
+        }
     }
 
     .refinement img{

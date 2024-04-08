@@ -57,11 +57,10 @@ p{
   padding: 0.8rem 2rem;
   font-size: 1.1rem;
   transition: background-color 0.3s ease;
-}
 
-.learn-more-button:hover{
-  background-color: var(--seljuk-blue);
-
+  &:hover{
+    background-color: var(--seljuk-blue);
+  }
 }
 
 /*------In-text link------*/
@@ -69,12 +68,12 @@ a{
   color: var(--drift-on-the-sea);
   transition: color 0.3s ease;
   font-size: 1.5rem;
-}
 
-a:hover{
-  color: var(--seljuk-blue);
+  &:hover{
+    color: var(--seljuk-blue);
+  }
+  
 }
-
 
 /*------Image as a link------*/
 
@@ -82,12 +81,11 @@ a:hover{
   width: 200px;
   height: auto;
   transition: 0.3s ease;
-}
 
-.image-nav:hover{
-  transform: scale(1.05);
+  &:hover{
+    transform: scale(1.05);
+  }
 }
-
 
 /* 
   TEXT ELEMENTS -------------------
@@ -109,31 +107,30 @@ ul li{
   list-style: none;
   gap: 35px; 
   transition: left 0.2s ease;
-}
 
-.nav-links a{
-  text-decoration: none;
+  a{
+    text-decoration: none;
+  }
 }
 
 .context{
   width: 100%;
   padding-left: 2rem;
   padding-top: 0.5rem;
+
+  td:first-of-type{
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  td:last-of-type{
+    font-size: 0.75rem;
+  }
 }
 
 tr{
   display: block;
 }
-
-.context td:first-of-type{
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.context td:last-of-type{
-  font-size: 0.75rem;
-}
-
 
 .project-section-title{
   color: var(--drift-on-the-sea);
@@ -262,14 +259,6 @@ figcaption{
   BRAND COMPONENT ELEMENTS -------------------
 */
 
-h1,h2{
-  font-family: Roboto, serif;
-}
-
-h3, h4, p{
-  font-family: Helvetica, sans-serif;
-}
-
 h1{
    font-size: 44px;
    font-weight: 800;
@@ -294,6 +283,14 @@ p{
   font-weight: 100;
   line-height: 1.4rem;
   color: var(--cocoa-brown);
+}
+
+h1,h2{
+  font-family: Roboto, serif;
+}
+
+h3, h4, p{
+  font-family: Helvetica, sans-serif;
 }
 
 .typography, .color-palette{
@@ -333,19 +330,21 @@ p{
   margin-bottom: 5rem;
 }
 
-.imagery img[src="image/seniowell-phone.png"]{
-  width: 200px;
-}
+.imagery{
+  img[src="image/seniowell-phone.png"]{
+    width: 200px;
+  }
 
-.imagery img[src="image/persona.png"]{
-  width: 400px;
-}
+  img[src="image/persona.png"]{
+    width: 400px;
+  }
 
-.imagery img[src="image/profile.png"]{
-  width: 300px;
-}
+  img[src="image/profile.png"]{
+    width: 300px;
+  }
 
-.imagery img{
-  height: auto;
-  margin-right: 2rem;
+  img{
+    height: auto;
+    margin-right: 2rem;
+  }
 }

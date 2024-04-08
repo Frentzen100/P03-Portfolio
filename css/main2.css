@@ -69,10 +69,11 @@ figcaption{
   text-decoration: none;
   margin-top: 1.4rem;
   color: var(--drift-on-the-sea);
-}
 
-.logo:hover{
-  color: var(--seljuk-blue);
+  &:hover{
+    color: var(--seljuk-blue);
+  }
+  
 }
 
 /*
@@ -114,6 +115,25 @@ nav{
   padding-bottom: 5rem;
   border-bottom: solid 2px var(--gray);
   animation: fadeInDown 0.5s forwards;
+
+  ul{
+    position: fixed;
+    right: 0;
+    margin-right: 2rem;
+    margin-top: 1.2rem;
+
+    li:nth-child(n+1){
+      transform: translateY(0.4rem);
+    }
+
+    li:nth-child(n+1) a {
+      color: var(--drift-on-the-sea);
+
+      &:hover{
+        color: var(--seljuk-blue);
+       }
+   }
+  }
 }
 
 @keyframes fadeInDown {
@@ -126,26 +146,6 @@ nav{
     transform: translateY(0px);
   }
 }
-
-
-nav ul{
-  position: fixed;
-  right: 0;
-  margin-right: 2rem;
-  margin-top: 1.2rem;
-}
-
-nav ul li:nth-child(n+1){
-  transform: translateY(0.4rem);
-}
-
-nav ul li:nth-child(n+1) a {
-    color: var(--drift-on-the-sea);
- }
- 
-nav ul li:nth-child(n+1) a:hover{
-   color: var(--seljuk-blue);
-  }
 
 
 /*-------------Bio-----------------*/
@@ -168,12 +168,11 @@ nav ul li:nth-child(n+1) a:hover{
   width: 40%;
   margin-right: 5rem;
   line-height: 1.5rem;
-}
 
-.featured-projects-description h3{
-  color: var(--drift-on-the-sea);
+  h3{
+    color: var(--drift-on-the-sea);
+  }
 }
-
 .featured-projects-subheading{
   font-size: 3.5rem;
   margin-top: 1.5rem;
@@ -203,26 +202,26 @@ button{
   background-color: var(--drift-on-the-sea);
   margin-top: -2rem;
   transform: translateX(-2.5rem);
+
+  h2{
+    color: var(--cocoa-brown);
+    padding-top: 7rem;
+    font-weight: bold;
+    animation: fadeInUp 0.5s forwards;
+  }
+
+  h4{
+    padding-bottom: 7rem;
+    font-weight: 100;
+    animation: fadeInUp 0.5s forwards;
+  }
 }
 
-.project-hero-section h2{
-  color: var(--cocoa-brown);
-  padding-top: 7rem;
-  font-weight: bold;
-  animation: fadeInUp 0.5s forwards;
-}
-
-.project-hero-section h4{
-  padding-bottom: 7rem;
-  font-weight: 100;
-  animation: fadeInUp 0.5s forwards;
-}
 
 .project-overall{
   width: 75%;
   padding-top: 5rem;
 }
-
 
 tr td:last-of-type{
   width: 90%;
@@ -270,6 +269,16 @@ tr td:last-of-type{
   display: flex;
   margin: auto;
   justify-content: center;
+
+  img{
+    width: auto;
+    height: 500px;
+    text-align: center;
+  }
+
+  figcaption{
+    width: 75%;
+  }
 }
 
 .three-images-size{
@@ -277,16 +286,6 @@ tr td:last-of-type{
   height: auto;
 }
 
-
-.three-images img{
-  width: auto;
-  height: 500px;
-  text-align: center;
-}
-
-.three-images figcaption{
-  width: 75%;
-}
 
 
 .image-and-caption{
@@ -344,11 +343,11 @@ footer{
 
   .project-hero-section{
     width: 120%;
-  } 
 
-  .project-hero-section h2, .project-hero-section h4{
-    margin-left: -2rem;
-  }
+    h2, h4{
+      margin-left: -2rem;
+    }
+  } 
 
   /*----------Footer------------*/
   footer{
@@ -391,12 +390,11 @@ footer{
     transition: left 0.2s ease;
     border-right: solid 2px var(--seljuk-blue);
     z-index: 2000000;
-  }
 
-  .nav-links li:last-of-type{
-    transform: translateY(-2rem);
+    li:last-of-type{
+      transform: translateY(-2rem);
+    }
   }
-
 
   header.show-mobile-menu .navbar .nav-links {
     left: 0;
@@ -426,17 +424,16 @@ footer{
   .context{
     width: 90%;
     order: 1;
-  }
 
-  .context td:first-of-type{
-    font-weight: bold;
-    font-size: 1.25rem;
+    td:first-of-type{
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+
+    .context td:last-of-type{
+      font-size: 1rem;
+    }
   }
-  
-  .context td:last-of-type{
-    font-size: 1rem;
-  }
-  
 
   .project-overview{
     width: 100%;
