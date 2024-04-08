@@ -42,12 +42,11 @@ h1{
 .image-nav{
   width: 300px;
   height: auto;
+  border: solid 2px var(--drift-on-the-sea);
+  border-radius: 25px;
 }
 
-footer{
-  width: 108%;
-  margin-left: -2.5rem;
-}
+
 
 figcaption{
   margin-top: 1.5rem;
@@ -124,15 +123,16 @@ nav{
 
     li:nth-child(n+1){
       transform: translateY(0.4rem);
+
+      a {
+        color: var(--drift-on-the-sea);
+  
+        &:hover{
+          color: var(--seljuk-blue);
+        }
+     }
     }
 
-    li:nth-child(n+1) a {
-      color: var(--drift-on-the-sea);
-
-      &:hover{
-        color: var(--seljuk-blue);
-       }
-   }
   }
 }
 
@@ -264,7 +264,6 @@ tr td:last-of-type{
   list-style: none;
 }
 
-
 .three-images{
   display: flex;
   margin: auto;
@@ -287,7 +286,6 @@ tr td:last-of-type{
 }
 
 
-
 .image-and-caption{
   display: block;
 }
@@ -304,9 +302,51 @@ tr td:last-of-type{
   font-weight: bold;
   font-size: 1.1rem;
 }
+
+.three-points-container{
+  display: flex;
+  justify-content: space-between;
+
+  .three-points{
+    width: 30%;
+    margin-bottom: 2rem;
+  }
+
+  h4{
+    font-weight: 500;
+  }
+}
+
+.two-points-container{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+
+  .two-points{
+    width: 45%;
+    margin-bottom: 2rem;
+  }
+
+  h4{
+    font-weight: 500;
+  }
+}
+
 /*-----------------Footer-----------------------*/
 footer{
   margin-top: 10rem;
+  width: 108%;
+  margin-left: -2.5rem;
+
+}
+
+.copyright{
+  margin-top: 5rem;
+  font-style: italic;
+  display: block;
+  padding-bottom: 2rem;
+  font-size: 0.8rem;
+  color: var(--cocoa-brown);
 }
 
 
@@ -348,6 +388,19 @@ footer{
       margin-left: -2rem;
     }
   } 
+
+  .three-points-container, .two-points-container{
+    display: block;
+
+    .three-points{
+      width: 100%;
+      
+      p{
+        margin-top: -1rem;
+        padding-bottom: 2rem;
+      }
+    }
+  }
 
   /*----------Footer------------*/
   footer{

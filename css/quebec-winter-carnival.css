@@ -1,4 +1,6 @@
-#seniowell{
+
+
+/*#seniowell{
     margin: auto;
     margin-top: -5rem;
 }
@@ -66,17 +68,10 @@
     margin-left: -1rem;
 }
 
-.refinement li{
-    list-style: none;
-}
-
 #seniowell-contact-me{
     position: absolute;
     bottom: 0;
 }
-
-
-/*Target everything except for the last element: https://stackoverflow.com/questions/2573544/how-can-i-select-all-children-of-an-element-except-the-last-child */
 
 @media (max-width: 1250px) {
     #seniowell-persona{
@@ -181,7 +176,7 @@
     }
   }
 
-@media (max-width: 660px){
+  @media (max-width: 660px){
 
     #seniowell-logo{
         margin-top: 2rem;
@@ -190,15 +185,9 @@
 
     .prototype{
         display: block;
-
-        img{
-            text-align: center;
-        }
-
-        .image-and-caption{
-            width: 100%;
-            transform: translate(-1rem);
-        }
+        text-align: center;
     }
-}
+  }
+
+  */
 
