@@ -38,35 +38,36 @@
       <h4> Quebec Winter Carnival - Event Website</h4>
     </section>
 
-    <section class="project-overall" id="seniowell">
+    <section class="project-overall" id="quebec-winter-carnival">
 
     <section class="project-main-content">
 
       <div class="project-overview">
-        <img src="image/seniowell/logo.png" alt="SenioWell logo" id="seniowell-logo">
+        <img src="image/quebec-winter-carnival/logo.png" alt="Quebec Winter Carnival logo" id="quebec-winter-carnival-logo" class="project-logo">
         <div class="project-overview-description">
           <h3 class="project-section-title">PROJECT OVERVIEW</h3>
-            <p>SenioWell is a workout application designed to provide simple exercises for seniors to prevent further stages of osteoporosis and arthritis.
-              In this <span class="highlight">academic project</span>, I collaborated with a team of two to develop a complex and interactive user interface. 
-              This involved research to identify suitable exercises and creating prototypes to visualize the app's interactive features </p>
+            <p>Quebec Winter Carnival is the largest winter festival in the world that happens annually in Quebec City.
+            This <span class="highlight">academic project</span> involved collaborating with a team of 3 to redesign an existing Quebec Winter Carnival website. 
+            This included organizing information strategically to develop a stunning user interface, and ensuring responsiveness for both laptop and mobile phone users. </p>
         </div>
       </div>
-<!--
-      <div class="context">
+
+      <div class="context" id="quebec-winter-carnival-context">
         <table>
           <tr>
             <td>ROLE</td>
-            <td>UX/UI Designer</td>
+            <td>Web Designer</td>
           </tr>
   
           <tr>
             <td>TEAM</td>
-            <td>Mustafa, Harshil</td>
+            <td>
+              Irena, Irina, Max, Steven</td>
           </tr>
   
           <tr>
             <td>TIMELINE</td>
-            <td>Fall 2023, 7 weeks</td>
+            <td>Figma, Replit</td>
           </tr>
   
           <tr>
@@ -76,28 +77,90 @@
   
           <tr>
             <td>SKILLS</td>
-            <td>UX researching, Interaction design, Wireframing, Prototyping</td>
+            <td>HTML/CSS, Ideation, Researching</td>
+          </tr>
+
+          <tr>
+            <td>LINK</td>
+            <td>https://rockymountainpictures.github.io/IAT235-Final-Project/#</td>
           </tr>
         </table>
       </div>
     </section>
 
-    <h3 class="project-section-title">RESEARCH</h3>
-      <h4 class="project-section-subheading">Personas</h4>
-        <p>To determine the types of exercises to implement in the app, I decided to create personas to show potential objectives and tasks that seniors may have when engaging with the app.</p>
-    
-    <div id="seniowell-persona">
-      <img src="image/seniowell/persona1.png" alt="First persona" class="two-images">
-      <img src="image/seniowell/persona2.png" alt="Second persona" class="two-images">
-    </div>
-    <figcaption>Persona for senior who experience oesteoporosis and arthritis</figcaption>
+    <h2 class="project-section-title">PROBLEM</h2>
+      <p>The website lacked a map feature which make tourists finding it difficult to locate the offered activities and their respective locations. 
+         In addition, upon researching the existing map interface, it appeared complex and confusing. 
+         As a result, users would find it time-consuming to discover the activities they may wish to pursue.</p>
+    <img src="image/quebec-winter-carnival/map.png" alt="Quebec Winter Carnival map" class="one-image">
+    <figcaption>Current Quebec Winter Carnival map</figcaption>
 
-      <h4 class="project-section-subheading">Userflow</h4>
-        <p> To create a user flow, I need to first understand the user's goal and pain point when they exercise by analyzing the personas.
-           Then, I created relevant features and all the necessary actions the seniors need to accomplish their goal. 
-           I did this to ensure all team members have a shared understanding of how we visualized our intended user journey.</p>
-    <img src="image/seniowell/userflow.png" alt="Userflow" class="one-image seniowell-userflow">
-    <figcaption>Journey of the user through our app</figcaption>
+    <h2 class="project-section-title">RESEARCH</h2>
+      <p>My initial task involved researching tourist feedback on TripAdvisor to identify any issues encountered during the winter festival.
+       The findings revealed that tourists struggle to locate their desired activities within the festival grounds.
+       Consequently, I recommended to my team members to develop an interactive map to streamline visitor navigation.</p>
+       <p>Subsequently, I was assigned to determine the essential activities to be featured on the map. 
+        To accomplish this, I analyzed popular winter activities showcased on competitor websites, such as Vernon Winter Carnival, Winterlude and Winter Festival of Light. 
+        In addition, I also searched for simple attraction map such as Club Penguin to gain inspiration for how our interactive map will look like.</p>
+    <img src="image/quebec-winter-carnival/inspiration.png" alt="Club Penguin map" class="one-image">
+    <figcaption>Map inspiration from Club Penguin</figcaption>
+
+    <h2 class="project-section-title">DESIGN</h2>
+      <h3 class="project-section-subheading">Initial Iteration</h3>
+      <div class="two-points-container">
+        <div class="three-points">
+          <h4>Refining the Element Layout</h4>
+            <p> I utilized CSS margin and padding properties to generate white space around crucial elements, thereby enhancing usability by facilitating easy button-clicking and improving overall aesthetics, aiding users in distinguishing between various elements. 
+            In addition, I also utilized position properties to overlay the icons onto the map</p>
+        </div>
+
+        <div class="three-points">
+          <h4>Enhancing the Interactivity</h4>
+            <p>In order to make my homepage more interactive, I incorporated animation effects into all call-to-action elements to give them a clickable appearance.
+              Furthermore, I incorporated a popup feature on my map webpage to enhance user engagement and allowing users to discover more about the activities.</p>
+        </div>
+      </div>
+
+      <img src="image/quebec-winter-carnival/effect.png" alt="Hover effect and Popup effect figure" class="one-image">
+      <figcaption>Adding animation to UI element</figcaption>
+
+      <h3 class="project-section-subheading">Challenge</h3>
+        <p>The backgrounds of the homepage and about page appeared simple due to the minimal use of decorative elements.
+        In addition, the dog illustration looks distracting so therefore, it was hard for the user to focus on the content. </p>
+
+      <img src="image/quebec-winter-carnival/initial-prototype.png" alt="Initial prototype of Quebec Winter Carnival" class="one-image">
+      <figcaption>Initial website design</figcaption>
+
+      <h3 class="project-section-subheading">Refinement</h3>
+      <div class="three-points-container">
+        <div class="three-points">
+          <h4>Step 1: Minimizing Distraction</h4>
+            <p>I decreased the size of the dog illustration and eliminate its speech, ensuring improved readability of the content.</p>
+        </div>
+
+        <div class="three-points">
+          <h4>Step 2: Enhancing Webpage Appearance</h4>
+            <p>I enhanced the visual appeal of the website by incorporating a background using the 'background-image' property.</p>
+        </div>
+
+        <div class="three-points">
+          <h4>Step 3: Adding Map Preview</h4>
+            <p>I replaced the hero image with a snow globe to provide users with a preview of our interactive map.</p>
+        </div>
+      </div>
+
+      <img src="image/quebec-winter-carnival/refinement.png" alt="Comparing initial and final website design" class="one-image">
+      <figcaption>Comparing initial and final website design</figcaption>
+
+      <h3 class="project-section-subheading">Final Iteration</h3>
+        <p>As a result of our drastic changes such as adding gradient and decorative elements to the background, we created a more winter-themed and visually appealing interface.
+           Furthermore, we have provided additional context about the winter festival, showcasing essential information to offer a comprehensive understanding of the event.</p>
+      <img src="image/quebec-winter-carnival/visitor-guide.png" alt="Visitor guide figure" class="one-image">
+      <figcaption>Essential information for the user</figcaption>
+
+
+
+<!--
 
     <h3 class="project-section-title">DESIGN</h3>
      <h4 class="project-section-subheading">Sketches - Home page, Exercise page, Favorite page</h4>
@@ -188,15 +251,14 @@
           <figcaption>Final interaction for completing an exercise</figcaption>
       </div>
      </div>
-
+    -->
      <h3 class="project-section-title">REFLECTION</h3>
-     <p>Thanks to this project, I have deepened my understanding of design principles, usability components, and UI guidelines.
-       Furthermore, thanks to the YouTube tutorial, I have learned how to create a highly interactive prototype using ProtoPie for the first time. 
-       If I have more time, I would like to recruit seniors to test my app and use the think-aloud method to understand their decisions. 
-       In addition, I would also like to incorporate a music feature to make it easier for seniors to exercise while enjoying. </p>
+     <p>At first, I was a beginner in HTML and CSS but thanks to the course professor’s tutorial, YouTube videos, and various learning platforms, I expanded my skills in enhancing website responsiveness and aesthetics.
+       By researching web design trends, I discovered effective strategies, including the use of illustrations to create a playful vibe on our website.
+       In addition, I also get to learn how my team members use JavaScript to create user interactions, such as coding approaches for implementing pop-up functionalities. </p>
   </section>
 
--->
+
 
   <footer>
     <section id="contact-me">
@@ -221,27 +283,6 @@
 
     // Close mobile menu on close button click
     closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
-
-    //--------------------//
-    
-    //JavaScript for changing a landscape image to a portrait image
-    function swapImages() {
-      var image = document.getElementById('storyboard-image');
-
-      var viewportWidth = window.innerWidth;
-
-      if (viewportWidth <= 992) {
-          image.src = 'image/seniowell/storyboard-mobile.png';
-          image.style.width = '55%'; 
-      } else {
-          image.src = 'image/seniowell/storyboard.png';
-          image.style.width = '100%'; 
-      }
-    }
-
-    // Call swapImages function on page load and window resize
-    window.onload = swapImages;
-    window.onresize = swapImages;
     
   </script>
 

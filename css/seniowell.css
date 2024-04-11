@@ -1,13 +1,5 @@
-#seniowell{
-    margin: auto;
-    margin-top: -5rem;
-}
 
-#seniowell-logo{
-    width: 310px;
-    height: auto;
-    border: solid 1px var(--drift-on-the-sea);
-}
+
 #seniowell-signup{
     width: auto;
     height: 400px;
@@ -140,10 +132,6 @@
             width: 40%;
             margin: auto;
         }
-    }
-
-    .refinement img{
-        width: 100%;
     }
 
 }
