@@ -32,9 +32,9 @@
       </nav>
     </header>
 
-    <section class="project-hero-section">
-      <h2>UI Design</h2>
-      <h4> SenioWell - Senior Workout Mobile Application</h4>
+    <section class="project-hero-section" id="seniowell-project-hero-section">
+      <h2>UX/UI Design</h2>
+        <h4> SenioWell - Senior Workout Mobile Application</h4>
     </section>
 
     <section class="project-overall" id="seniowell">
@@ -85,10 +85,13 @@
       <h3 class="project-section-subheading">Personas</h3>
         <p>To determine the types of exercises to implement in the app, I decided to create personas to show potential objectives and tasks that seniors may have when engaging with the app.</p>
     
+        <!--
     <div id="seniowell-persona">
       <img src="image/seniowell/persona1.png" alt="First persona" class="two-images">
       <img src="image/seniowell/persona2.png" alt="Second persona" class="two-images">
     </div>
+  -->
+    <img src="image/seniowell/persona1.png" alt="First persona" class="one-image" id="persona-image">
     <figcaption>Persona for senior who experience oesteoporosis and arthritis</figcaption>
 
       <h3 class="project-section-subheading">Userflow</h3>
@@ -129,17 +132,7 @@
     <figcaption>Case study of a user who is doing a workout</figcaption>
         
     <h3 class="project-section-subheading">Initial Prototype</h3>
-     <!--
-     <ul>
-       <li> <span class="key-statement">Increasing Sign-Up Efficiency:</span> I integrated a scrolling animation effect into the 'finish' button, allowing seniors to input their remaining information seamlessly.
-           As a result, this ensured a smoother and quicker sign-up process, as seniors no longer need to manually scroll down to complete their profile, thereby enhancing their overall experience.</li>
-       <li> <span class="key-statement">Enhancing Visual Clarity:</span> I implemented a new color for the bookmark icon to signify when a workout has been bookmarked. 
-           This visual cue made it easier for users to identify which workouts they've saved for future reference.</li>
-       <li> <span class="key-statement">Catering To Senior:</span> I removed the resting period timer to reduce the number of steps required for the workout completion process. 
-           This granted users more flexibility in managing their rest periods between exercises, ensuring they're adequately prepared for their next exercise.</li>    
-     </ul>
-    -->
-    
+  
     <div class="three-points-container">   
       <div class="three-points">
         <h4>Increasing Sign-Up Efficiency</h4>
@@ -261,23 +254,36 @@
     //--------------------//
     
     //JavaScript for changing a landscape image to a portrait image
-    function swapImages() {
-      var image = document.getElementById('storyboard-image');
+    function swapImages(imageId) {
+      var image  = document.getElementById(imageId);
 
       var viewportWidth = window.innerWidth;
 
       if (viewportWidth <= 992) {
+        if (imageId == 'storyboard-image'){
           image.src = 'image/seniowell/storyboard-mobile.png';
           image.style.width = '55%'; 
+        }
+        else if (imageId == 'persona-image'){
+          image.src = 'image/seniowell/persona2.png';
+          image.style.width = '80%'; 
+        }
       } else {
+        if (imageId == 'storyboard-image'){
           image.src = 'image/seniowell/storyboard.png';
           image.style.width = '100%'; 
       }
+      else if (imageId == 'persona-image'){
+          image.src = 'image/seniowell/persona1.png';
+      }
     }
+  }
 
-    // Call swapImages function on page load and window resize
-    window.onload = swapImages;
-    window.onresize = swapImages;
+    window.addEventListener('resize', function() {
+    swapImages('storyboard-image');
+    swapImages('persona-image');
+  
+});
     
   </script>
 

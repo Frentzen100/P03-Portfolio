@@ -214,9 +214,8 @@ figcaption{
 }
 
 .bio-quote{
-  color: var(--orange-soda);
   font-size: 1.4rem;
-  font-weight: 100;
+  font-weight: 800;
   line-height: 2rem;
 }
 

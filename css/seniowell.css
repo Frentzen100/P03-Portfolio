@@ -1,4 +1,12 @@
 
+#seniowell-project-hero-section{
+    width: 110%;
+    background-image: url('../image/seniowell/hero-image.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 #seniowell-signup{
     width: auto;
@@ -171,10 +179,10 @@
 
 @media (max-width: 660px){
 
-    #seniowell-logo{
+    /* #seniowell-logo{
         margin-top: 2rem;
         min-width: 100%;
-    }
+    } */
 
     .prototype{
         display: block;
