@@ -122,6 +122,7 @@ ul li{
   td:first-of-type{
     font-weight: bold;
     font-size: 1rem;
+    color: var(--drift-on-the-sea);
   }
 
   td:last-of-type{

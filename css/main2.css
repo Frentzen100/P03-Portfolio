@@ -33,9 +33,9 @@ html{
 }
 
 h1{
-  color: var(--seljuk-blue);
+  color: var(--drift-on-the-sea);
   text-align: center;
-  border-bottom: solid 3px var(--gray);
+  border-bottom: solid 3px var(--drift-on-the-sea);
   padding-bottom: 1rem;
   width: 40%;
   margin: 8rem auto 3rem auto;
@@ -179,7 +179,7 @@ nav{
   line-height: 1.5rem;
 
   h3, h4{
-    color: var(--drift-on-the-sea);
+    color: var(--orange-soda);
   }
 
   h3{
@@ -265,7 +265,7 @@ button{
 }
 
 table td{
-  word-break: break-all;
+  word-break: break-word;
 }
 
 tr td:last-of-type{
@@ -293,7 +293,7 @@ tr td:last-of-type{
   flex-wrap: wrap;
   align-items: center;
   width: 25%;
-  border: dashed 2px var(--seljuk-blue);
+  border: dashed 2px var(--drift-on-the-sea);
 }
 
 .one-image{
