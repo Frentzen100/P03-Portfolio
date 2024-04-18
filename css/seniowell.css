@@ -74,9 +74,6 @@
     bottom: 0;
 }
 
-
-/*Target everything except for the last element: https://stackoverflow.com/questions/2573544/how-can-i-select-all-children-of-an-element-except-the-last-child */
-
 @media (max-width: 1250px) {
     #seniowell-persona{
         display: block;

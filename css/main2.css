@@ -211,11 +211,11 @@ button{
   border-radius: 80px;
 }
 
-/*-----------------Contact Me-----------------*/
-
-.contact-me-quote{
-  color: var(--cocoa-brown);
+/*-----------Footer-----------*/
+footer{
+  margin-top: 10rem;
 }
+
 /*-----------------Overall Project-----------------*/
 
 .project-overall{
@@ -264,6 +264,11 @@ button{
   }
 }
 
+.project-link{
+  color: var(--cocoa-brown);
+  font-size: 0.75rem;
+}
+
 table td{
   word-break: break-word;
 }
@@ -294,6 +299,8 @@ tr td:last-of-type{
   align-items: center;
   width: 25%;
   border: dashed 2px var(--drift-on-the-sea);
+  padding-left: 2rem;
+  padding-top: 1rem;
 }
 
 .one-image{
@@ -339,9 +346,6 @@ tr td:last-of-type{
   margin-top: -1rem;
 }
 
-.highlight{
-  font-weight: bold;
-}
 
 .key-statement{
   font-weight: bold;
@@ -376,24 +380,6 @@ tr td:last-of-type{
     font-weight: 500;
   }
 }
-
-/*-----------------Footer-----------------------*/
-footer{
-  margin-top: 10rem;
-  width: 108%;
-  margin-left: -2.5rem;
-
-}
-
-.copyright{
-  margin-top: 5rem;
-  font-style: italic;
-  display: block;
-  padding-bottom: 2rem;
-  font-size: 0.8rem;
-  color: var(--cocoa-brown);
-}
-
 
 /*-----------------Responsiveness-----------------------*/
 
